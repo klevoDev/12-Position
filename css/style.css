@@ -23,7 +23,18 @@
     color: #000000;
 }
 
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 119%;
+}
 
+.title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 117%;
+}
 
 
 
@@ -31,6 +42,8 @@
 .header {
     background: linear-gradient(90.16deg, #50D3FD 7.4%, #D2FF98 92.52%);
     border-radius: 0px 0px 15px 15px;
+
+    margin-bottom: 25px;
 }
 
 .header__logo {
@@ -50,12 +63,226 @@
 
 .task-one {}
 
-.container {}
+.task-one__subheading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 117%;
+}
 
-.task-one__subheading {}
+.task-one__text {
+    margin-bottom: 25px;
+}
 
-.task-one__text {}
+.task-one__title {
+    margin-bottom: 17px;
+}
 
-.text {}
+.task-one__desc {
+    margin-bottom: 44px;
+}
 
-.task-one__title {}
+
+
+.task-one__circle {
+    position: relative;
+
+    margin-bottom: 51px;
+}
+
+.range__red {
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    background: #FA2424;
+}
+
+.range__blue {
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    background: #5073EF;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.task-one__circle::before {
+    content: '';
+
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    top: 0;
+    left: 49px;
+    z-index: 1;
+
+    background: #FFDE30;
+}
+
+.task-one__circle::after {
+    content: '';
+
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    top: 0;
+    right: 64px;
+    z-index: 1;
+
+    background: #E84589;
+}
+
+
+
+.task-one__circle-center {
+    position: relative;
+    max-width: 248px;
+    margin: 0 auto;
+
+    margin-bottom: 133px;
+}
+
+.range__yellow {
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    background: #FFDE30;
+}
+
+.task-one__circle-center::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 49px;
+    z-index: -1;
+
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    background: #5073EF;
+}
+
+.task-one__circle-center::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 52px;
+
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+    background: #FA2424;
+}
+
+.range__vinous {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    background: #E84589;
+}
+
+
+
+.task-one__circle-rhombus {
+    position: relative;
+    max-width: 98px;
+    margin: 0 auto;
+
+    margin-bottom: 98px;
+}
+
+.range__red-center {
+    height: 98px;
+    border-radius: 50px;
+    background: #FA2424;
+
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+.task-one__circle-rhombus::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 49px;
+
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+    z-index: -1;
+
+    background: #FFDE30;
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.task-one__circle-rhombus::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 49px;
+    z-index: -3;
+
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    background: #7945E8;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.range__red-center::before {
+    content: '';
+
+    bottom: 38px;
+    left: 0px;
+    z-index: -4;
+
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    background: #5073EF;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.range__red-center::after {
+    content: '';
+
+    top: 49px;
+    left: 0px;
+    z-index: -2;
+
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    border-radius: 50px;
+
+    background: #E84589;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+/* почему margin-left упирает вправо впритык */
