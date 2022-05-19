@@ -60,11 +60,19 @@ body {
 }
 
 .page__task-three {
-    margin-bottom: 130px;
+    margin-bottom: 33px;
 }
 
 .page__task-four {
-    margin-bottom: 51px;
+    margin-bottom: 65px;
+}
+
+.page__task-five {
+    margin-bottom: 48px;
+}
+
+.page__task-six {
+    margin-bottom: 31px;
 }
 
 
@@ -319,16 +327,11 @@ body {
     position: relative;
     width: 154px;
     margin: 0 auto;
-    margin-bottom: 36px;
-    border: 5px solid gold;
 }
 
 .task-three__border::before {
     content: '';
 
-    /* position: absolute;
-    top: -12px;
-    left: -1px; */
     display: inline-block;
 
     width: 77px;
@@ -343,7 +346,7 @@ body {
 
     position: absolute;
     left: 23px;
-    bottom: 24.5px;
+    bottom: 28px;
 
     width: 10px;
     height: 9.8px;
@@ -365,8 +368,6 @@ body {
 
 
 
-
-
 .task-four {}
 
 .task-four__title {
@@ -377,13 +378,18 @@ body {
     margin-bottom: 19px;
 }
 
+.task-four__form {}
+
 .task-four__wrap-input-on {
     position: relative;
 
     max-width: 283px;
     height: 40px;
 
-    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 45px;
 }
 
 .task-four__wrap-input-off {
@@ -391,6 +397,39 @@ body {
 
     max-width: 283px;
     height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-four__span-on {
+    content: '';
+
+    position: absolute;
+    right: 10px;
+    bottom: -14px;
+
+    width: 25px;
+    height: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    line-height: 122%;
+    color: #E64E4E;
+}
+
+.task-four__span-off {
+    content: '';
+
+    position: absolute;
+    right: 10px;
+    bottom: -14px;
+
+    width: 42px;
+    height: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    line-height: 122%;
+    color: #71D74D;
 }
 
 .task-four__wrap-input-on::before {
@@ -429,8 +468,8 @@ body {
 .task-four__wrap-input-off::after {
     content: '';
     position: absolute;
-    top: 17px;
-    right: 17px;
+    top: 14px;
+    right: 19px;
 
     width: 13px;
     height: 11px;
@@ -465,3 +504,54 @@ body {
     font-size: 12px;
     line-height: 117%;
 }
+
+
+
+
+.task-five {}
+
+.task-five__title {
+    margin-bottom: 17px;
+}
+
+.task-five__text {
+    margin-bottom: 23px;
+}
+
+.task-five__list {
+    line-height: 119%;
+}
+
+.task-five__item {
+    position: relative;
+
+    margin-left: 23px;
+    padding-left: 24px;
+
+    margin-bottom: 9px;
+}
+
+.task-five__item::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 16px;
+    height: 11px;
+    background: url('./../img/check.svg');
+}
+
+.task-five__item:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.task-six {}
+
+.task-six__title {
+    margin-bottom: 17px;
+}
+
+.task-six__text {}
