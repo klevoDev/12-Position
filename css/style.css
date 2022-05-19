@@ -9,7 +9,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
 }
 
 
@@ -555,3 +554,26 @@ body {
 }
 
 .task-six__text {}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 60px;
+    z-index: 778;
+
+    text-align: center;
+
+    padding: 9px 0 4px;
+
+    background: linear-gradient(90.16deg, #FD9950 7.4%, #D2FF98 92.52%);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.footer__link {}
+
+.link {}
